@@ -216,7 +216,7 @@ html, body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60vw;
+    height: auto;
     background-color: #FCF9F7;
 }
 .hd3 h4{
@@ -550,7 +550,8 @@ html, body{
         max-width: 110%;
     }
     .hd3{
-        height: 1300px;
+        height: auto;
+        padding-bottom: 30px;
     }
 }
 .hd5{
