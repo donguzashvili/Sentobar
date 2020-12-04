@@ -1,0 +1,830 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.nav-bg{
+    background-color: #222227;
+    height: 90px;
+}
+.nav-link span{
+    display: none;
+}
+.nav-move{
+    position: fixed!important;
+    z-index: 20000;
+    width: 100%;
+}
+
+.sentobar img{
+    width: 250px;
+    height: 30%;
+    padding-left: 70px;
+}
+.min-navbar{
+    background-color: #222227;
+}
+.navbar-toggler{
+    border: none!important;
+}
+
+.navbar-toggler-icon{
+    color: #ffffff;
+    padding-right: 100px!important;
+}
+.navbar-nav li a{
+    color: white!important;
+    font-size: 10px;
+}
+.navbar-toggler span{
+    color: white!important;
+    padding-right: 30px;
+}
+
+.nav-item button{
+    background-color: #9e8a78;
+    font-family: open sans,serif;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+}
+.nav-item{
+    padding: 36px 8px;
+}
+.dropdown-menu{
+    display: none;
+    background-color: #222227!important;
+    width: 220px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 86%!important;
+    z-index: -1;
+
+}
+.carousel-item img{
+    height: 50vw;
+
+}
+.dropdown-menu:not(last-child) li{
+    color: white!important;
+    border-bottom: 1px solid #303133;
+    padding: 10px 0;
+    font-size: 10px!important;
+}
+.dropdown-menu li a{
+    padding: 10px 15px;
+    font-family: open sans,serif;
+    transition: color .3s ease 0s,padding .3s ease 0s;
+    text-decoration: none;
+}
+.dropdown ul{
+    display: none;
+}
+.dropdown:hover ul{
+    display: block;
+    cursor: pointer;
+}
+.drop-hover:hover a{
+    background-color: #9e8a78;
+    padding-left: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.hd1{
+    /*background-image: url("./img/slide-1-1600x680.jpg");*/
+    height: 40vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0!important;
+}
+.hd1-description{
+    position: absolute;
+    z-index: 999;
+    top: 26%;
+    left: 10%;
+}
+.hd1-description h2{
+    color: #fff;
+    font-family: playfair display, Sans-serif, Serif, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 50px;
+    letter-spacing: 0;
+    width: 60%;
+}
+.hd1-description p{
+    font-family: open sans,Sans-serif, Serif, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 58%;
+    color: #ffffff;
+}
+.btn button{
+    color: #fff;
+    background-color: #9e8a78;
+    border-radius: 0 0 0 0;
+    padding: 10px 20px;
+    font-family: open sans, Sans-serif, serif;
+    font-size: 12px;
+    border: none;
+}
+.btn{
+    padding: 0!important;
+}
+.firstinfirst{
+
+    text-align: center;
+    align-content: center;
+    width: 32rem;
+
+}
+.firstinfirst h2{
+    font-family: playfair display, Sans-serif, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: .5px;
+    color: #222;
+    margin: 0 0 23px;
+
+}
+.firstinfirst h6{
+    font-family: open sans, Sans-serif, serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin: 0 0 15px;
+}
+.firstinfirst p{
+    font-family: open sans, Sans-serif,  Serif, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 26px;
+    color: #777;
+}
+.firstinfirst img{
+    height: 200px;
+    width:200px;
+}
+.hd2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hd2-first{
+    padding-right: 20%!important;
+    padding-top: 200px;
+    display: inline-block;
+}
+.hd2-second{
+    padding-left: 50px;
+}
+.hd2-second img{
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: 150%;
+    object-fit: cover;
+}
+.hd3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vw;
+    background-color: #FCF9F7;
+}
+.hd3 h4{
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin: 0 0 15px;
+    padding-top: 100px;
+}
+.hd3 h2{
+    font-family: playfair display,Sans-serif, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: .5px;
+    color: #222;
+    margin: 0 0 20px;
+}
+.hd3 p{
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #777777;
+}
+.row-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service{
+    padding-top: 120px;
+    margin: 38px;
+}
+.service h5{
+    font-family: playfair display,Sans-serif, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #222;
+    margin: 0 0 15px;
+}
+.service p{
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #777;
+    margin: 0;
+    max-width: 200px;
+}
+.ser-img{
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    margin: 0 0 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .carou-height{
+        height: 50vw;
+    }
+    .hd1-description h2{
+        font-size: 30px;
+    }
+    .hd1-description p{
+        font-size: 12px;
+    }
+    .nav-link{
+        display: flex;
+    }
+    .nav-link span {
+        display: flex;
+    }
+    .nav-link span{
+        color: white;
+    }
+    .navbar-collapse{
+        background-color: #222227;
+        position: absolute;
+        height: 413px;
+        width: 744px;
+        top: 38px;
+        left: 37px;
+    }
+    .nav-item:hover ul{
+        display: none;
+    }
+    .nav-item:hover li{
+        display: none;
+    }
+    .nav-item {
+        padding: 0 20px !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .hd1-description {
+        top: 40%;
+        left: 30% !important;
+    }
+    .hd1-description h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .hd1-description p{
+        display: none;
+    }
+    .btn{
+        display: none!important;
+    }
+    .hd2-first {
+        display: block;!important;
+    }
+}
+
+@media screen and (max-width: 1086px) {
+.hd2-first{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+    .hd2-second{
+        width: 70%;
+    }
+    .firstinfirst{
+        width: 120%;
+        padding-left: 20%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .service{
+        margin: 40px;
+        width: 30%;
+    }
+    .service p{
+
+        text-align: center;
+        max-width: 330px;
+    }
+    .hd3{
+        height: 1000px;
+    }
+}
+
+.ser-img:hover{
+    transition: all .2s ease-in-out;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.hd4{
+    background-image: url("../style/img/hd4.jpg");
+    height: 50vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+.hd4-description{
+    padding-top: 300px;
+    padding-left: 7%;
+    color: white;
+    width: 50%;
+
+}
+.hd4-description h2{
+    font-family: playfair display,Sans-serif, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.hd4-description p{
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    width: 92%;
+}
+.form{
+    background-color: #ffffff;
+    width: 571px;
+    height: 519px;
+    margin-top: 100px;
+}
+.form-head h2{
+    font-family: playfair display,Sans-serif, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #222;
+    margin: 0 0 15px;
+}
+.form-head p{
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777;
+    width: 80%;
+
+}
+.form-head{
+    margin-bottom: 40px;
+    text-align: left;
+}
+.pding{
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 50px 30px;
+}
+.inputers{
+    display: inline-block;
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    padding: 12px 4%;
+    margin: 0 10px 20px;
+}
+
+.c{
+    padding: 12px 8%;
+}
+.selectors{
+    padding: 12px 8%;
+    margin: 0 8px 16px;
+}
+.l{
+    padding: 12px 7%;
+}
+.form-size button{
+    border-radius: 0 0 0 0;
+    font-family: open sans,Sans-serif, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #9e8a78;
+    display: inline-block;
+    width: auto;
+    border: none;
+    padding: 15px 20px;
+    font-weight: 700;
+    margin: 0 10px;
+
+}
+
+@media screen and (max-width:1025px) {
+    .hd4-description h2{
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 1037px) {
+.hd4{
+    display: block;
+    height: 1100px!important;
+    background-attachment: unset;
+}
+    .firstinfirst{
+        padding-top: 50px;
+    }
+    .hd4-description{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .form{
+        width: 100%;
+        height: 731px;
+    }
+    .form-size input{
+        display: block;
+        width: 95%;
+    }
+    .form-size select{
+        display: block;
+        width: 95%;
+    }
+}
+@media screen and (max-width: 1260px) and (min-width: 997px) {
+    .hd4{
+        height: 800px;
+    }
+}
+@media screen and (max-width: 768px){
+    .row-flex{
+        display: block!important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .service{
+        width: 90%;
+        padding-top: 60px;
+    }
+    .service p{
+        justify-content: center;
+        text-align: center;
+        max-width: 110%;
+    }
+    .hd3{
+        height: 1300px;
+    }
+}
+.hd5{
+    height: 60vw;
+    width: 100%;
+}
+.hd5-description{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+
+}
+.hd5-description h4{
+    visibility: visible;
+    animation-duration: 700ms;
+    animation-delay: 400ms;
+    animation-name: bfadeInBottom;
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999999;
+    margin: 0 0 15px 0;
+
+}
+.hd5-description h2{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: #222;
+    margin: 0 0 20px 0;
+}
+.hd5-description p{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+    margin: 0 0 0 0;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardI img{
+height: 100%;
+    width: 100%;
+    padding: ;
+}
+
+@media screen and (max-width: 1305px) {
+    .front{
+        display: inline-block ;
+    }
+    .back{
+        display: inline-block;
+    }
+    .cardI img{
+        width: 100%;
+        padding: 16px;
+    }
+}
+.cardI:hover{
+    filter: grayscale(1);
+}
+.cardI > img{
+    position: relative;
+/*overflow: hidden;*/
+}
+.wrapper{
+    background-color: rgba(158, 138, 120, 0.8);
+    padding: 20px 10px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.wrapper h2{
+    margin: 0px 0px 5px 0px;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.wrapper p{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.bg-img{
+    background-image: url("../style/img/testimonial.jpg");
+    height: 40vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cardI:hover .wrapper{
+    bottom: 16px;
+    left: 16px;
+    transition: all .5s linear;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper p{
+
+}
+.hd6{
+    height: 40vw;
+    width: 100%;
+ }
+.slider p{
+    z-index: 999;
+    color: #fff;
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.slider h2{
+    z-index: 999;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+}.slider{
+    position: absolute;
+    top: 40%;
+ }
+ .hd7{
+     height: 50vw;
+     width: 100%;
+ }
+ .hd7-description{
+     margin-top: 100px;
+ }
+ .hd7-description h4{
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-family: "Open Sans", Sans-serif, sans-serif;
+     font-size: 12px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: #999999;
+     margin: 0 0 15px 0;
+ }
+ .hd7-description h2{
+     font-family: "Playfair Display", Sans-serif, sans-serif;
+     font-size: 40px;
+     font-weight: 500;
+     text-transform: uppercase;
+     line-height: 44px;
+     letter-spacing: 0.5px;
+     color: #222;
+     margin: 0 0 20px 0;
+     justify-content: center;
+     text-align: center;
+ }
+ .hd7-description p{
+     font-family: "Open Sans", Sans-serif, sans-serif;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 26px;
+     color: #777777;
+     justify-content: center;
+     text-align: center;
+ }
+ .hd7-container{
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+ }
+ .card1{
+     background-color: #FCF9F7;
+     height: 400px;
+     width: 25%;
+     padding: 0 10px 0 10px;
+     margin: 10px;
+ }
+ @media screen and (max-width: 768px){
+     .hd7-container{
+         display: block;
+     }
+     .card1{
+         width: 100%;
+     }
+ }
+.pricing-icon img{
+    margin-top: 40px;
+    height: 50px;
+    width: 50px;
+}
+.pricing-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pricing-icon h3{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    color: #222222;
+    padding-top: 20px;
+}
+.pricing-icon h4{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+.card1 p{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.card1 button{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #938a78;
+    padding: 10px 25px;
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btnn1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.hd8{
+    height: 40vw;
+    background-image: url("../style/img/hd8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.hd8-description{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+}
+.hd8-description h2{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+.hd8-description p{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
