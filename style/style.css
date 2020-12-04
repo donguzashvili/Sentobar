@@ -68,7 +68,7 @@ html, body{
     height: auto;
     position: absolute;
     left: 0;
-    top: 86%!important;
+    top: 85%!important;
     z-index: -1;
 
 }
@@ -76,17 +76,26 @@ html, body{
     height: 50vw;
 
 }
-.dropdown-menu:not(last-child) li{
+.dropdown-menu li:not(last-child){
     color: white!important;
     border-bottom: 1px solid #303133;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 10px!important;
+}
+.dropdown-menu li:last-child{
+    border-bottom: none;
 }
 .dropdown-menu li a{
     padding: 10px 15px;
     font-family: open sans,serif;
     transition: color .3s ease 0s,padding .3s ease 0s;
     text-decoration: none;
+}
+.dropdown-menu li:hover{
+    background-color: #9e8a78;
+}
+.dropdown-menu{
+    padding: 0!important;
 }
 .dropdown ul{
     display: none;
