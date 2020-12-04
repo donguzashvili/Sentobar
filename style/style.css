@@ -595,7 +595,6 @@ html, body{
 .cardI img{
 height: 100%;
     width: 100%;
-    padding: ;
 }
 
 @media screen and (max-width: 1305px) {
@@ -618,7 +617,7 @@ height: 100%;
 /*overflow: hidden;*/
 }
 .wrapper{
-    background-color: rgba(158, 138, 120, 0.8);
+    background-color: rgba(158, 138, 120, 0.8)!important;
     padding: 20px 10px;
     width: 100%;
     height: 100px;
@@ -631,15 +630,15 @@ height: 100%;
     transition: all 0.4s ease-in-out;
 }
 .wrapper h2{
-    margin: 0px 0px 5px 0px;
-    font-family: "Playfair Display", Sans-serif;
+    margin: 0 0 5px 0;
+    font-family: "Playfair Display", Sans-serif, sans-serif;
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
 }
 .wrapper p{
-    font-family: "Open Sans", Sans-serif;
+    font-family: "Open Sans", Sans-serif, sans-serif;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -665,7 +664,6 @@ height: 100%;
     cursor: pointer;
     visibility: visible;
     opacity: 1;
-    transform: translate();
 }
 .wrapper p{
 
@@ -754,7 +752,7 @@ height: 100%;
          display: block;
      }
      .card1{
-         width: 100%;
+         width: auto;
      }
  }
 .pricing-icon img{
@@ -808,6 +806,7 @@ height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-bottom: 20px;
 }
 .hd8{
     height: 40vw;
@@ -822,6 +821,7 @@ height: 100%;
     text-align: center;
     align-items: center;
     vertical-align: center;
+    padding: 15%;
 }
 .hd8-description h2{
     font-family: "Playfair Display", Sans-serif, sans-serif;
@@ -839,4 +839,356 @@ height: 100%;
     line-height: 22px;
     letter-spacing: 1px;
     color: #ffffff;
+}
+@media screen and (max-width: 1230px) {
+    .hd7{
+        height: auto;
+    }
+    .card1{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .hd8-description h2{
+        font-size: 28px;
+    }
+    .hd8-description{
+        padding: 6%;
+    }
+}
+.hd9{
+    height: auto;
+    width: 100%;
+}
+.hd9-description{
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.hd9-description h4 {
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999999;
+    margin: 0 0 15px 0;
+}
+.hd9-description h2{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #222;
+    margin: 0 0 20px 0;
+}
+.hd9-description p{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #777777;
+}
+.news-cards{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ncard{
+    height: 583px;
+    width: 353px;
+    margin: 10px;
+    background-color: #FCF9F7;
+}
+.ncard-img{
+    object-fit: fill;
+}
+.ncard-img img{
+    width: 100%;
+    overflow: hidden;
+}
+.ncard-img img:before{
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.ncard-description{
+    padding: 30px 25px;
+}
+.ncard-description time{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777777;
+}
+.ncard-description h2{
+    font-family: "Playfair Display", Sans-serif, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 35px;
+    color: #222;
+    margin: 5px 0 10px 0;
+}
+.ncard-description p:first-child{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #777777;
+}
+.ncard-description p:last-child{
+    font-family: "Open Sans", Sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777777;
+}
+@media screen and (max-width: 765px){
+    .news-cards{
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .ncard{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+.selection{
+    height: 130px;
+    background-color: #FCF9F7;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1070px) {
+.fifth{
+    display: none;
+}
+}
+@media screen and (max-width: 860px) {
+    .fourth{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+.third{
+    display: none;
+}
+}
+@media screen and (max-width: 440px) {
+.second{
+    display: none;
+}
+}
+.footer{
+    background-color: #222227;
+
+}
+.footer-container{
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one-description{
+    color: white;
+}
+.onethird{
+    width: 30%;
+}
+.onethird img{
+    width: 230px;
+}
+.twothird{
+    color: white;
+    width: 23%;
+}
+.twothird h3{
+    font-size: 18px;
+}
+.ul-2 li{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+    width: 90%;
+}
+.one-description span{
+    font-family: 'Open Sans', serif;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+}
+.one-description{
+    padding-top: 15px;
+}
+.one-description p{
+    color: #777777;
+}
+.twothird h3{
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+.threethird h2{
+    color: white;
+    margin: 0 0 20px;
+}
+.threethird{
+    padding-bottom: 172px;
+    width: 30%;
+}
+.footer-form{
+    display: flex;
+}
+.footer-input{
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 12px;
+    line-height: 50px;
+    padding: 0 10px;
+    float: left;
+    border-radius: 0;
+    width: 70%;
+    transition: all 0.5s ease-in-out;
+}
+.footer-form button{
+    background-color: #9e8a78;
+    color: #fff;
+    font-family: "Open Sans", serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    float: left;
+    width: 30%;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.footer-form button:hover{
+    transition: all .5s ease-in-out;
+    background-color: #897666;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container{
+        display: block;
+        padding-left: 50px;
+    }
+    .threethird{
+        width: 90%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .footer-form button{
+        width: 20%;
+    }
+    .ul-2 {
+        padding: 0 100px 0 10px!important;
+    }
+    .onethird{
+        width: 100%;
+    }
+    .twothird{
+        width: 100%;
+    }
+
+}
+.ul-2 li:hover{
+    cursor: pointer;
+    color: white;
+    transition: all .5s linear;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container{
+        display: block;
+        padding-left: 50px;
+    }
+    .threethird{
+        width: 90%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .footer-form button{
+        width: 20%;
+    }
+    .ul-2 {
+        padding: 0 100px 0 10px!important;
+    }
+}
+.copyright{
+    background-color: #222227;
+    color: #bbb;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+}
+.copyright p{
+    padding-top: 20px;
+}
+.footer hr{
+    margin: 0!important;
+    background-color: #646262;
+}
+.uparrow{
+    display: block;
+    text-align: center;
+    background-color: #9e8a78;
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    z-index: 999;
+    text-decoration: none;
+}
+.social-icons i{
+    font-weight: 500;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-right: 10px;
+}
+.social-icons i:hover{
+    color: white;
+    cursor: pointer;
+}
+.uparrow i{
+    color: white;
+    font-size: 22px;
+}
+.uparrow:hover{
+    transition: all .5s linear;
+    transform: translate(0, -8px);
+
 }
