@@ -307,7 +307,15 @@ html, body{
     .nav-item {
         padding: 0 20px !important;
     }
-
+.cards{
+    flex-wrap: wrap;
+}
+.hd5{
+    height: auto!important;
+}
+.hd7{
+    height: auto!important;
+}
 
 
 }
@@ -599,7 +607,7 @@ height: 100%;
     }
     .cardI img{
         width: 100%;
-        padding: 16px;
+
     }
 }
 .cardI:hover{
@@ -647,13 +655,17 @@ height: 100%;
     background-size: cover;
     position: relative;
 }
+.cardI{
+    margin: 10px;
+}
 .cardI:hover .wrapper{
-    bottom: 16px;
-    left: 16px;
+    bottom: 0;
+    left: 0;
     transition: all .5s linear;
     cursor: pointer;
     visibility: visible;
     opacity: 1;
+    transform: translate();
 }
 .wrapper p{
 
